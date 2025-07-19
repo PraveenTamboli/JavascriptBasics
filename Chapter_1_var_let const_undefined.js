@@ -5,8 +5,8 @@
 // var //can be changed
 
 accountName // if we define a variable without any of the 
-            // above keyword then also js does not gives issue
-            
+// above keyword then also js does not gives issue
+
 // NOTE
 /* var should not be used because 
 it has problem with functional and block scope.
