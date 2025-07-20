@@ -45,6 +45,10 @@ console.log(boolAnotherVal1) //true
 
 // undefined => false
 // null => false
+//[] => true //NOTE - in js [] is an object if we check by typeof
+//{} => true
+
+//NOTE - to check if a variable is an array use variable.isArray rather than typeof
 
 // 3. Conversion to string
 console.log("Strings ------------->")
