@@ -1,0 +1,8 @@
+Expression	    Result	     Why
+"5" + 1	         "51"	    String + Number → String
+"5" - 1	          4	         "5" → 5, 5 - 1 = 4
+true + true	      2	         1 + 1
+true - false      1	         1 - 0
+null + 5	      5	        null → 0
+undefined + 5    NaN	    undefined → NaN
+"hello" - 1	     NaN	    "hello" → NaN (not numeric)
