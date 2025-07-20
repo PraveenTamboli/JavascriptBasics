@@ -1,0 +1,43 @@
+ Boolean([]) ➝ true
+JavaScript me empty array is a truthy value, so:
+
+
+if ([]) {
+  console.log("yes")   // ✅ this runs
+}
+😵 [] == false ➝ true — kyun bhai??
+Ye == wali type coercion kar raha hai.
+Let’s go step-by-step:
+
+
+[] == false
+Step 1️⃣: false ➝ number ➝ 0
+false ko JS convert karta hai number 0 me
+
+false == 0  // true ✅
+Step 2️⃣: [] ➝ number me convert hota hai
+Array ([]) ➝ toPrimitive ➝ "" ➝ number ➝ 0
+
+
+Number([])  // 0 ✅
+Final: 0 == 0 ➝ true ✅
+Hence:
+
+ 
+
+[] == false  // true (due to coercion steps)
+⚠️ But this will confuse you more:
+
+
+[] === false     // false ❌ (no coercion in ===)
+Boolean([])      // true ✅
+So it’s all about how JS does type coercion with == vs strict check ===
+
+🧠 TL;DR:
+Expression	Result	Why?
+Boolean([])	true	Array is truthy
+[] == false	true	Coerces: [] → 0, false → 0
+[] === false	false	No coercion, types differ
+
+
+Number([])	0
