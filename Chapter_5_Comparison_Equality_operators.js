@@ -8,7 +8,7 @@ console.log(2 != 1) //true
 
 
 console.log("2" > 1) //true - 2 string is converted to number
-
+console.log("Result is ---------->", true > 1) //false //true==1 //true //true >=1 //true
 
 console.log(null == 0) //false
 console.log(null > 0) //false

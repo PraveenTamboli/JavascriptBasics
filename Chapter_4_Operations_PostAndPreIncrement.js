@@ -5,6 +5,8 @@ console.log(1 + "2") //12
 console.log("1" + 2 + 2) // 122
 console.log(1 + 2 + "2") // 32
 console.log("3" - 5) //-2
+console.log("3" - true); //2
+
 
 console.log("Billu" + " Ji") //Billu Ji
 
@@ -22,7 +24,7 @@ console.log(+true) //1
 console.log(-true) //-1
 console.log(+"") //0
 console.log(1 + "bam") //1bam //same as above strings
-
+console.log(+"bam") //NaN
 
 
 // Post increment (gives increased value after original the value use) 

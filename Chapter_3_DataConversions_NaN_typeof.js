@@ -27,7 +27,7 @@ number*/
 // true => 1   false => 0 //type number
 //undefined => NaN //type number
 //null => 0 //type number
-
+console.log("Converted null is ", Number(null))
 
 // 2. Conversion to Boolean
 console.log("Booleans ------------->")
