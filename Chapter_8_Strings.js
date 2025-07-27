@@ -19,8 +19,9 @@ String {'Dumdum'}
 length: 6
 [[Prototype]]: String
 [[PrimitiveValue]]: "Dumdum" */
-
 //It means that String (String with capital S) is an object
+
+
 // SOME ACTIONS TO IMPLEMENT ON STRING
 console.log(gameName[0]); //D.
 console.log(gameName.length); //8.
@@ -29,12 +30,10 @@ console.log(gameName.indexOf('m')); //2 (first occurence of m)
 //.trim() -> to remove whitespaces
 //.replace('toReplace','replaceWith')
 //.includes('valueToCheck')
-console.log("Hello-world".split('-'));
-
-
+console.log("Hello-world".split('-')); //["Hello", "World"]
 console.log(gameName.toUpperCase()); //DUMDUM //Returns new string
 /* NOTE - Strings and strings either object or primitive but 
-both are immutable, so even the String (object ones) are stored in
+both are immutable, so even if the String (object ones) stored in
 heap then also they will never make changes in the original by
 reference. */
 
@@ -113,6 +112,7 @@ Object	 new String("hello")  Heap	    Reference	    Slower, more features
 "Primitive strings act like objects temporarily, 
 but they are not objects internally."
 */
+
 
 // SLICE METHOD
 /*
