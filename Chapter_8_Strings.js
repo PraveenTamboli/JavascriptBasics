@@ -27,9 +27,11 @@ console.log(gameName[0]); //D.
 console.log(gameName.length); //8.
 console.log(gameName.charAt(1)); //u
 console.log(gameName.indexOf('m')); //2 (first occurence of m)
+
 //.trim() -> to remove whitespaces
 //.replace('toReplace','replaceWith')
 //.includes('valueToCheck')
+//.split("") -> converts string into an array
 console.log("Hello-world".split('-')); //["Hello", "World"]
 console.log(gameName.toUpperCase()); //DUMDUM //Returns new string
 /* NOTE - Strings and strings either object or primitive but 
@@ -151,7 +153,7 @@ console.log(part1); // "rav"
 "hello".slice(3, 1);      // "" ❌
 "hello".substring(3, 1);  // "el" ✅ because it swaps 3 & 1
 🧠 substring() swap kar deta hai agar galat order ho
-slice() empty return karta hai
+slice() empty return karta hai, also slice accepts negative indexes
 */
 
 //SPLICE METHOD (NOTE - Not used for strings)
@@ -162,3 +164,6 @@ let arr1 = ["a", "b", "c", "d"];
 arr1.splice(1, 2, "x", "y");
 
 console.log(arr1); // ["a", "x", "y", "d"]
+
+
+// console.log(arr1.splice(1, 2)); returns the deleted elements array, remaining are in original array
